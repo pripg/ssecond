@@ -1,0 +1,29 @@
+package ssecond;
+
+public class Sistema {
+	
+	public static void main(String[] args) {
+		System.out.println("Cadastros no sistema");
+		
+		Estudante aluno = new Estudante();
+		
+		aluno.setNome("Augusto Leão");
+		aluno.setCPF("111.111.111-11");
+		aluno.setCurso("Administração");
+		aluno.setEstadoMatricula(true);
+		aluno.setIdade(37);
+		aluno.setMatricula(123456);
+		aluno.setMensalidade(500.0);
+		
+		aluno.imprimeDados();
+		
+		Professor prof1 = new Professor();
+		prof1.setNome("Priscila Cornélia");
+		prof1.setCpf("555.555.555-55");
+		prof1.setCurso("Análise");
+		prof1.setIdade(55);
+		prof1.setSalario(9000.0);
+		
+		prof1.imprimeDados();
+	}
+}
